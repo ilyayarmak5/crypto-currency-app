@@ -1,0 +1,39 @@
+@media screen and (max-width: 950px) {
+  .header {
+    margin: 1em 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .coins {
+    margin: 3em 0 0 0;
+
+    .coin {
+      width: 95%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      border: 1px solid;
+      line-height: 1.75;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .coins {
+    min-width: 90%;
+
+    .coin {
+      h4 {
+        text-align: center;
+      }
+
+      justify-self: center;
+    }
+  }
+
+  .search-bar {
+    min-width: 70vw;
+  }
+}

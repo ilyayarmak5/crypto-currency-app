@@ -4,11 +4,14 @@ const SearchBar = ({ search, setSearch }) => {
     console.log(search);
   };
   return (
-    <div>
-      <form>
-        <input type="text" placeholder="Search..." onChange={handleChange} />
-      </form>
-    </div>
+    <form>
+      <input
+        type="text"
+        placeholder="Search..."
+        onChange={handleChange}
+        className="search-bar"
+      />
+    </form>
   );
 };
 

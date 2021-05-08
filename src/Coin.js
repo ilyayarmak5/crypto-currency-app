@@ -7,15 +7,23 @@ const Coin = ({ coin }) => {
     current_price,
     image,
   } = coin;
+
+  const roundUp = (num) => {
+    return Math.round(num * 100) / 100;
+  };
   return (
-    <div>
+    <li className="coin">
       <img src={image} alt={`${name}`} />
       <h3>{name}</h3>
-      <h5>{low_24h}</h5>
-      <h5>{high_24h}</h5>
-      <h5>{current_price}</h5>
-      <h1>{price_change_percentage_24h}</h1>
-    </div>
+      <h4>Lowest Rate: {roundUp(low_24h)}$</h4>
+      <h4>Highest Rate: {roundUp(high_24h)}$</h4>
+      <h4>Current Rate: {roundUp(current_price)}$</h4>
+      <h4
+        className={price_change_percentage_24h > 0 ? "price-up" : "price-down"}
+      >
+        {roundUp(price_change_percentage_24h) + "%"}
+      </h4>
+    </li>
   );
 };
 

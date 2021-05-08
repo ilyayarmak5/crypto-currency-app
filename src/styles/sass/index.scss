@@ -1,2 +1,8 @@
-@import "config";
+@import "./config";
 @import "./utilities/variables";
+@import "./components/header";
+@import "./components/coins.scss";
+@import "./components/searchbar";
+
+@import "./layout/mobile";
+@import "./layout/laptop";

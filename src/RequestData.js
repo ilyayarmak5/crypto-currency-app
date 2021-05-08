@@ -35,7 +35,7 @@ const RequestData = ({ search }) => {
   }, []);
 
   return (
-    <div>
+    <div className="coins">
       {isLoading && <h1>Loading data...</h1>}
       {isError && <h1>Error... Something went wrong</h1>}
       <ReturnCurrency search={search} data={data} />

@@ -1,0 +1,9 @@
+.search-bar {
+  min-width: 50vw;
+  max-width: 50vw;
+  height: 1.5em;
+  font-size: 2rem;
+  &:focus {
+    outline: 2px solid red;
+  }
+}
