@@ -31,10 +31,4 @@ function App() {
   );
 }
 
-// <div className="coins">
-//   {isLoading && <h1>Loading data...</h1>}
-//   {isError && <h1>Error... Something went wrong</h1>}
-//   <ReturnCurrency search={search} data={data} />
-// </div>;
-
 export default App;
