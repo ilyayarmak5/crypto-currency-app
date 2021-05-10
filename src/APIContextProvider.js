@@ -1,7 +1,13 @@
+import React, { useContext, useState, useEffect } from "react";
 import axios from "axios";
-import { useState, useEffect } from "react";
-import ReturnCurrency from "./ReturnCurrency";
-const RequestData = ({ search }) => {
+
+const APIContext = React.createContext();
+
+export const useAPIData = () => {
+  return useContext(APIContext);
+};
+
+const APIContextProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
   const [data, setData] = useState([]);
@@ -35,12 +41,10 @@ const RequestData = ({ search }) => {
   }, []);
 
   return (
-    <div className="coins">
-      {isLoading && <h1>Loading data...</h1>}
-      {isError && <h1>Error... Something went wrong</h1>}
-      <ReturnCurrency search={search} data={data} />
-    </div>
+    <APIContext.Provider value={{ data, isLoading, isError }}>
+      {children}
+    </APIContext.Provider>
   );
 };
 
-export default RequestData;
+export default APIContextProvider;

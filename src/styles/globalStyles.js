@@ -12,6 +12,10 @@ export const GlobalStyles = createGlobalStyle`
     border-color: ${({ theme }) => theme.text};
     transition: all 0.25s linear;
   }
+  input {
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+  }
 
   small {
     display: block;
