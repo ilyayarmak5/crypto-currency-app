@@ -17,6 +17,7 @@ const ToggleContainer = styled.button`
   position: fixed;
   left: 2em;
   bottom: 2em;
+  z-index: 9999;
 `;
 
 const Switch = styled.div`
