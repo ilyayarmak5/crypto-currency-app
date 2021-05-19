@@ -9,7 +9,7 @@ https://adoring-varahamihira-fa59a9.netlify.app/
 1. Fetching and displaying data about popular cryptocurrencies which updates every 24 hours.
 2. Displaying cryptocurrencies according to the user's input in the searchbar.
 3. Darkmode.
-4. Haeader color tick every second.
+4. Header color tick every second.
 
 
 # Getting Started with Create React App
