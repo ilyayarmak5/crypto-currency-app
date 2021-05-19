@@ -10,6 +10,7 @@ https://adoring-varahamihira-fa59a9.netlify.app/
 2. Displaying cryptocurrencies according to the user's input in the searchbar.
 3. Darkmode.
 4. Header color tick every second.
+5. Components animation with fade effect.
 
 
 # Getting Started with Create React App
